@@ -10,7 +10,9 @@
   @for $size from 1 through $cols {
     @for $length from $size through $cols {
       @if $size !=$length or $size==1 {
-        //.col-#{$size}-of-
+        .col-#{$size}-of-#{$length} {
+          width: calc-col-width($size, $length);
+        }
       }
     }
   }
