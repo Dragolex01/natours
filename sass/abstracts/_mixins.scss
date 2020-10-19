@@ -6,6 +6,16 @@
   }
 }
 
+/*
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+*/
+
 @mixin colwidth {
   @for $size from 1 through $cols {
     @for $length from $size through $cols {
@@ -17,7 +27,3 @@
     }
   }
 }
-
-//Function en mixins
-//Functino en functions
-//Comentar html
