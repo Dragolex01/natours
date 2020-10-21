@@ -1,10 +1,14 @@
 .feature-box {
-  background-color: rgba($color: $color-white, $alpha: 0.8);
+  background-color: rgba(
+    $color: $color-white,
+    $alpha: 0.8
+  ); //Color, y Alpha son nombres
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  display: inline-block;
   transition: transform 0.3s;
 
   &__icon {
@@ -15,7 +19,7 @@
       to right,
       $color-primary-light,
       $color-primary-dark
-    ); // background-color can not use gradients
+    );
     -webkit-background-clip: text; // clip background to the text
     //background-clip: text;
     color: transparent; // hide the text to show the backgroup clipped
