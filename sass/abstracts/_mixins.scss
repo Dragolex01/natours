@@ -6,16 +6,6 @@
   }
 }
 
-/*
-@mixin clearfix {
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-*/
-
 @mixin colwidth {
   @for $size from 1 through $cols {
     @for $length from $size through $cols {
